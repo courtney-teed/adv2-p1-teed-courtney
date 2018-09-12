@@ -1,5 +1,22 @@
-header {
-  color: #ef413e;
+header,
+button,
+footer {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+body,
+summary {
+  font-family: "futura-pt";
+}
+body h2,
+summary h2 {
+  text-transform: uppercase;
+}
+details {
+  text-transform: none;
+}
+details summary {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
