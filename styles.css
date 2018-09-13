@@ -19,6 +19,18 @@ summary {
 :focus {
   outline: 0;
 }
+/* MIXINS */
+.black-menu {
+  color: #444444;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#page-container {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
 header,
 button,
 footer {
@@ -44,6 +56,12 @@ details summary {
   background-position: center center;
   background-size: cover;
   height: 130px;
+}
+.header-top ul li,
+.footer-bottom ul li {
+  color: #444444;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
