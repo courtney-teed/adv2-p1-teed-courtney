@@ -25,12 +25,6 @@ summary {
   font-size: 0.8rem;
   font-weight: 600;
 }
-#page-container {
-  width: 100%;
-}
-img {
-  max-width: 100%;
-}
 header,
 button,
 footer {
