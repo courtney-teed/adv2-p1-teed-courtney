@@ -1,5 +1,19 @@
 @import "variables";
 
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+:focus {
+	outline: 0;
+}
+
 
 header, button, footer {
 	font-family: 'Open Sans', sans-serif;
@@ -19,4 +33,12 @@ details {
 			text-transform: uppercase;
 		}
 	}
+
+.bgimage {
+	background-image: url('img/bw-background.png');
+	background-position: center center;
+	background-size: cover;
+	height: 130px;
+}
+
 
