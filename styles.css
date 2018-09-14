@@ -24,6 +24,7 @@ summary {
   color: #444444;
   font-size: 0.8rem;
   font-weight: 600;
+  margin-right: 20%;
 }
 header,
 button,
@@ -46,16 +47,44 @@ details summary {
   text-transform: uppercase;
 }
 .bgimage {
-  background-image: url('img/bw-background.png');
+  background-image: url('img/bw-background-original.png');
   background-position: center center;
   background-size: cover;
-  height: 130px;
+  height: 120px;
+  text-align: right;
+  padding-top: 10px;
 }
-.header-top ul li,
-.footer-bottom ul li {
+.header-top ul,
+.footer-bottom ul {
   color: #444444;
   font-size: 0.8rem;
   font-weight: 600;
+  margin-right: 20%;
+}
+.header-top ul li {
+  display: inline;
+  padding: 10px;
+}
+.header-top ul li img {
+  max-width: 20px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: -5px;
+}
+.footer-bottom {
+  padding-bottom: 20px;
+}
+.footer-menu ul li {
+  padding: 2px 10px;
+}
+.footer-social {
+  margin-right: 20%;
+}
+.footer-social img {
+  max-width: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0 1%;
 }
 
 /*# sourceMappingURL=styles.css.map */
