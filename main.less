@@ -131,6 +131,8 @@ header details {
 			button {
 				padding: 25px 10% 20px 10%;
 				font-size: 1.2rem;
+				font-weight: 700;
+				letter-spacing: 0.05em;
 				-webkit-border-radius: 0 0 0px 10px;
 				border-radius: 0 0 0px 10px;
 				@media (min-width: 1420px) {
@@ -139,7 +141,6 @@ header details {
 					}
 				}
 			.nav-button1 {
-				font-weight: 700;
 				color: @gray;
 				p {
 					border-bottom: 2px solid @green;
@@ -167,24 +168,37 @@ main {
 	section img {
 		width: 90%;
 	}
+	.middle-social {
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 30px;
+			height: 30px;
+			margin-top: 20px;
+			margin-bottom: 5px;
+			padding: 0 1%;
+		}
+	}
+	.grid-all {
+			display: none;
+		}
+	@media (min-width: 800px) {
+		.grid-all {
+			display: block;
+			margin: auto;
+			max-width: 1600px;
+			width: 98%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.grid {
+			display: none;
+		}
 	@media (min-width: 1024px) {
 		text-align: left;
 	}
 }
 
-aside {
-	.middle-social {
-		display: flex;
-		justify-content: center;
-	}
-	img {
-		max-width: 30px;
-		height: 30px;
-		margin-top: 20px;
-		margin-bottom: 5px;
-		padding: 0 1%;
-	}
-}
 
 .false-idol-logo {
 	max-width: 280px;
