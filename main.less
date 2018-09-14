@@ -16,9 +16,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 
-
-
-
 /* MIXINS */
 
 .black-menu {
@@ -27,6 +24,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	font-weight: 600;
 	margin-right: 20%;
 }
+
+/* END MIXINS */
+
 
 
 header, button, footer {
@@ -71,6 +71,70 @@ details {
 		margin-bottom: -5px;
 	}
 }
+
+.header-bottom {
+	display: flex;
+	align-items: center;
+	img {
+		width: 50px;
+		height: 50px;
+		padding: 10px;
+	}
+	.ch-holdings {
+		display: flex;
+		align-items: center;
+		text-transform: none;
+		font-size: 0.7rem;
+		width: 35%;
+	}
+	.header-bottom-right {
+		display: flex;
+		width: 65%;
+		font-size: 0.75rem;
+		.contact-info {
+			z-index: 1;
+			text-align: center;
+			background-color: @white;
+			padding: 30px 10px 0 10px;
+			-webkit-border-radius: 0 0 10px 10px;
+			border-radius: 0 0 10px 10px;
+			border: 1px solid @gray;
+			border-top: none;
+			width: 55%;
+			max-width: 450px;
+		}
+		nav {
+			display: flex;
+			width: 45%;
+			justify-content: flex-end;
+			button {
+				padding: 25px 10% 20px 10%;
+				font-size: 1.2rem;
+				-webkit-border-radius: 0 0 0px 10px;
+				border-radius: 0 0 0px 10px;
+				@media (min-width: 1420px) {
+					-webkit-border-radius: 0 0 10px 10px;
+					border-radius: 0 0 10px 10px;
+					}
+				}
+			.nav-button1 {
+				font-weight: 700;
+				color: @gray;
+				p {
+					border-bottom: 2px solid @green;
+				}
+			}
+			.nav-button2 {
+				background-color: @green;
+				color: @white;
+			}
+		}
+	}
+}
+
+
+
+
 
 .footer-bottom {
 	padding-bottom: 20px;
