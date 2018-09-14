@@ -27,6 +27,13 @@ summary {
   margin-right: 20%;
 }
 /* END MIXINS */
+.site-container {
+  text-align: center;
+  overflow-x: hidden;
+}
+.site-container header summary {
+  text-align: right;
+}
 header,
 button,
 footer {
@@ -34,18 +41,26 @@ footer {
   text-transform: uppercase;
 }
 body,
-summary {
+summary,
+details {
   font-family: "futura-pt";
 }
 body h2,
-summary h2 {
+summary h2,
+details h2 {
   text-transform: uppercase;
 }
 details {
   text-transform: none;
+  padding: 10px;
 }
 details summary {
   text-transform: uppercase;
+  padding: 10px;
+}
+details p {
+  width: 175px;
+  float: right;
 }
 .bgimage {
   background-image: url('img/bw-background-original.png');

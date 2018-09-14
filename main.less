@@ -27,14 +27,20 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 /* END MIXINS */
 
-
+.site-container {
+	text-align: center;
+	overflow-x: hidden;
+	header summary {
+		text-align: right;
+	}
+}
 
 header, button, footer {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 }
 
-body, summary {
+body, summary, details {
 	font-family: "futura-pt";
 	h2 {
 		text-transform: uppercase;
@@ -43,8 +49,14 @@ body, summary {
 
 details {
 	text-transform: none;
+	padding: 10px;
 		summary {
 			text-transform: uppercase;
+			padding: 10px;
+		}
+		p {
+			width: 175px;
+			float: right;
 		}
 	}
 
@@ -131,7 +143,6 @@ details {
 		}
 	}
 }
-
 
 
 
