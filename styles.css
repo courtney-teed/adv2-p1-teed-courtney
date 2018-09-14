@@ -173,6 +173,17 @@ main section img {
     text-align: left;
   }
 }
+aside .middle-social {
+  display: flex;
+  justify-content: center;
+}
+aside img {
+  max-width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0 1%;
+}
 .false-idol-logo {
   max-width: 280px;
 }
