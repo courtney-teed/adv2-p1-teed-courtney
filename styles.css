@@ -309,6 +309,7 @@ main .hidden details summary {
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 30px;
+  margin-left: -40px;
 }
 main .cocktails h2,
 main .hidden h2,
@@ -328,16 +329,37 @@ main .hidden div {
   width: 900px;
   margin-left: 70px;
 }
-.footer-bottom {
+footer .footer-top {
+  display: flex;
+  justify-content: center;
+  text-transform: none;
+  z-index: 1;
+  background-color: #f2f2f2;
+  padding: 10px 10px 0 10px;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #444444;
+  border-bottom: none;
+  margin: auto;
+  width: 35%;
+}
+footer .footer-top .red-text {
+  color: #e95f78;
+}
+footer .footer-top p {
+  padding: 10px;
+  font-weight: 600;
+}
+footer .footer-bottom {
   padding-bottom: 20px;
 }
-.footer-menu ul li {
+footer .footer-menu ul li {
   padding: 2px 10px;
 }
-.footer-social {
+footer .footer-social {
   margin-right: 20%;
 }
-.footer-social img {
+footer .footer-social img {
   max-width: 30px;
   margin-top: 20px;
   margin-bottom: 5px;
