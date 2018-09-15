@@ -221,7 +221,7 @@ main .grid-all {
 main .about {
   display: flex;
   margin: 40px 0 20px 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 2px solid #008a7b;
 }
 main .about h2 {
@@ -245,6 +245,13 @@ main .about p {
   margin-top: 20px;
   margin-left: 30px;
   letter-spacing: 0.04em;
+}
+main .three-image-grid {
+  text-align: center;
+}
+main .three-image-grid .image-row {
+  width: 32%;
+  padding: 40px 4px 80px 4px;
 }
 .footer-bottom {
   padding-bottom: 20px;
