@@ -27,6 +27,9 @@ summary {
   margin-right: 20%;
 }
 /* END MIXINS */
+ul li {
+  list-style-type: none;
+}
 .site-container {
   text-align: center;
   overflow-x: hidden;
@@ -62,6 +65,13 @@ header details p {
   width: 175px;
   float: right;
 }
+details summary::-webkit-details-marker {
+  color: #008a7b;
+  transform: rotate(90deg);
+}
+details[open] summary::-webkit-details-marker {
+  transform: rotate(180deg);
+}
 .bgimage {
   background-image: url('img/bw-background-original.png');
   background-position: center center;
@@ -74,8 +84,8 @@ header details p {
   background-image: url('img/about-tab.jpg');
   background-position: center center;
   background-size: cover;
-  height: 100px;
-  width: 70px;
+  height: 130px;
+  width: 100px;
   padding-top: 20px;
 }
 .header-top ul,
@@ -233,26 +243,63 @@ main .about h2 {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   background-color: #008a7b;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 25px;
   -webkit-border-radius: 0 10px 0 0;
   border-radius: 0 10px 0 0;
 }
 main .about p {
-  width: 770px;
+  width: 60%;
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 90px;
   letter-spacing: 0.04em;
 }
 main .three-image-grid {
   text-align: center;
-  max-width: 2000px;
 }
 main .three-image-grid .image-row {
   width: 32%;
   padding: 40px 4px 80px 4px;
+}
+main .cocktails,
+main .hidden {
+  display: flex;
+  justify-content: center;
+  padding: 5px 30px 5px 30px;
+}
+main .cocktails p,
+main .hidden p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+main .cocktails img,
+main .hidden img {
+  width: 120px;
+  height: 280px;
+  margin-right: 20px;
+}
+main .cocktails div,
+main .hidden div {
+  width: 830px;
+}
+main .cocktails div ul li,
+main .hidden div ul li {
+  padding: 10px 0 10px 0;
+}
+main .cocktails details,
+main .hidden details {
+  margin-left: 70px;
+}
+main .cocktails details summary,
+main .hidden details summary {
+  text-align: center;
+  color: #008a7b;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .footer-bottom {
   padding-bottom: 20px;
