@@ -90,7 +90,7 @@ details[open] summary::-webkit-details-marker {
 	background-position: center center;
 	background-size: cover;
 	height: 130px;
-	width: 100px;
+	width: 140px;
 	padding-top: 20px;
 }
 
@@ -261,10 +261,19 @@ main {
 			padding: 40px 4px 80px 4px;
 		}
 	}
+	.cocktails {
+		img {
+			margin-top: 70px;
+		}
+		h2 {
+			padding-bottom: 40px;
+			margin-left: 50px;
+		}
+	}
 	.cocktails, .hidden {
 		display: flex;
 		justify-content: center;
-		padding: 5px 30px 5px 30px;
+		margin-top: 10px;
 		p {
 			font-size: 1.1rem;
 			font-weight: 300;
@@ -289,8 +298,25 @@ main {
 				font-size: 0.9rem;
 				font-weight: 500;
 				text-transform: uppercase;
+				margin-top: 15px;
+				margin-bottom: 30px;
 			}
 		}
+		h2, h3 {
+			color: @gray;
+		}
+		ul {
+			border: 10px solid @white;
+			padding: 40px;
+		}
+	}
+	.hidden {
+		margin-bottom: 40px;
+		div {
+			width: 900px;
+			margin-left: 70px;
+		}
+	}
 }
 
 

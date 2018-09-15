@@ -85,7 +85,7 @@ details[open] summary::-webkit-details-marker {
   background-position: center center;
   background-size: cover;
   height: 130px;
-  width: 100px;
+  width: 140px;
   padding-top: 20px;
 }
 .header-top ul,
@@ -263,11 +263,18 @@ main .three-image-grid .image-row {
   width: 32%;
   padding: 40px 4px 80px 4px;
 }
+main .cocktails img {
+  margin-top: 70px;
+}
+main .cocktails h2 {
+  padding-bottom: 40px;
+  margin-left: 50px;
+}
 main .cocktails,
 main .hidden {
   display: flex;
   justify-content: center;
-  padding: 5px 30px 5px 30px;
+  margin-top: 10px;
 }
 main .cocktails p,
 main .hidden p {
@@ -300,6 +307,26 @@ main .hidden details summary {
   font-size: 0.9rem;
   font-weight: 500;
   text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+main .cocktails h2,
+main .hidden h2,
+main .cocktails h3,
+main .hidden h3 {
+  color: #444444;
+}
+main .cocktails ul,
+main .hidden ul {
+  border: 10px solid #f2f2f2;
+  padding: 40px;
+}
+main .hidden {
+  margin-bottom: 40px;
+}
+main .hidden div {
+  width: 900px;
+  margin-left: 70px;
 }
 .footer-bottom {
   padding-bottom: 20px;
