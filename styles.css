@@ -70,6 +70,14 @@ header details p {
   text-align: right;
   padding-top: 10px;
 }
+.bg-image-tab {
+  background-image: url('img/about-tab.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100px;
+  width: 70px;
+  padding-top: 20px;
+}
 .header-top ul,
 .footer-bottom ul {
   color: #444444;
@@ -154,38 +162,25 @@ header details p {
   background-color: #008a7b;
   color: #f2f2f2;
 }
-main {
-  /*
-	#gallery{
-		max-width: 1200px;
-		margin: auto;
-		margin-bottom: 100px;
-	}
-
-	#gallery img{
-		display: inline;
-		float: left;
-	}
-
-	.galleryimg1{
-		width: 100%;
-	}
-
-	.galleryimg2, .galleryimg3, .galleryimg4, .galleryimg5{
-		width: 50%;
-	}
-	*/
-}
 main h1 {
   font-size: 1.4rem;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
   main h1 {
-    margin-top: 183px;
     font-size: 1.15rem;
     font-weight: 400;
+    margin-top: 183px;
+  }
+}
+main .false-idol-logo {
+  max-width: 280px;
+}
+@media (min-width: 1024px) {
+  main .false-idol-logo {
+    float: left;
+    max-width: 350px;
+    margin-top: -183px;
   }
 }
 main section img {
@@ -206,55 +201,6 @@ main .grid-all {
   display: none;
 }
 @media (min-width: 800px) {
-  main {
-    /*
-		.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:""}.clearfix:after{clear:both}
-
-		img {max-width:100%;width:100%}
-
-		.first {float:left;}
-		.middle {float:left;}
-		.last {float:right;}
-
-		.group_1of3, table.table_structure_3x td {width:33.33333333333333%;}
-		.group_2of3 {width:66.66666666666666%;}
-
-		.top {height:600px}
-
-		*/
-    /*
-		#gallery{
-			max-width: 1800px;
-			margin: auto;
-			margin-bottom: 100px;
-		}
-		#gallery img{
-			display: inline;
-			float: left;
-			width: 25%;
-			transition: .5s;
-			    -webkit-transition: .5s;
-		    	-moz-transition: .5s;
-		    opacity: 1;
-		}
-		#gallery img:hover {
-			transform: scale(.98);
-			-webkit-transform: scale(.98);
-		    -moz-transform: scale(.98);
-		    transition: .5s;
-		    -webkit-transition: .5s;
-		    -moz-transition: .5s;
-		    opacity: 0.8;
-		}
-		#gallerystyle1 .galleryimg1 {
-			width: 50%;
-		}
-		#gallerystyle2 .galleryimg3 {
-			width: 50%;
-			float: right;
-		}
-		*/
-  }
   main .grid-all {
     display: block;
     margin: auto;
@@ -272,15 +218,33 @@ main .grid-all {
     text-align: left;
   }
 }
-.false-idol-logo {
-  max-width: 280px;
+main .about {
+  display: flex;
+  margin: 40px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #008a7b;
 }
-@media (min-width: 1024px) {
-  .false-idol-logo {
-    float: left;
-    max-width: 350px;
-    margin-top: -183px;
-  }
+main .about h2 {
+  width: 50px;
+  color: #f2f2f2;
+  writing-mode: vertical-lr;
+  letter-spacing: 0.05em;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #008a7b;
+  padding-top: 20px;
+  padding-left: 25px;
+  -webkit-border-radius: 0 10px 0 0;
+  border-radius: 0 10px 0 0;
+}
+main .about p {
+  width: 770px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 30px;
+  letter-spacing: 0.04em;
 }
 .footer-bottom {
   padding-bottom: 20px;

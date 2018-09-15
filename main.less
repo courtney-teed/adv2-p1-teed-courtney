@@ -73,6 +73,15 @@ header details {
 	padding-top: 10px;
 }
 
+.bg-image-tab {
+	background-image: url('img/about-tab.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 100px;
+	width: 70px;
+	padding-top: 20px;
+}
+
 .header-top ul, .footer-bottom ul {
 	.black-menu()
 }
@@ -158,11 +167,18 @@ main {
 	h1 {
 		font-size: 1.4rem;
 		font-weight: 400;
-		margin-bottom: 20px;
 		@media (min-width: 1024px) {
-			margin-top: 183px;
 			font-size: 1.15rem;
 			font-weight: 400;
+			margin-top: 183px;
+		}
+	}
+		.false-idol-logo {
+		max-width: 280px;
+		@media (min-width: 1024px) {
+			float: left;
+			max-width: 350px;
+			margin-top: -183px;
 		}
 	}
 	section img {
@@ -194,20 +210,40 @@ main {
 		.grid {
 			display: none;
 		}
+	}
 	@media (min-width: 1024px) {
 		text-align: left;
 	}
-}
-
-
-.false-idol-logo {
-	max-width: 280px;
-	@media (min-width: 1024px) {
-		float: left;
-		max-width: 350px;
-		margin-top: -183px;
+	.about {
+		display: flex;
+		margin: 40px 0 20px 0;
+		padding-bottom: 20px;
+		border-bottom: 2px solid @green;
+		h2 {
+			width: 50px;
+			color: @white;
+			writing-mode: vertical-lr;
+			letter-spacing: 0.05em;
+			font-size: 1.4rem;
+			font-weight: 600;
+			font-family: 'Open Sans', sans-serif;
+			background-color: @green;
+			padding-top: 20px;
+			padding-left: 25px;
+			-webkit-border-radius: 0 10px 0 0;
+			border-radius: 0 10px 0 0;
+		}
+		p {
+			width: 770px;
+			font-size: 1.2rem;
+			font-weight: 300;
+			margin-top: 20px;
+			margin-left: 30px;
+			letter-spacing: 0.04em;
+		}
 	}
 }
+
 
 
 .footer-bottom {
