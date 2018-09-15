@@ -248,6 +248,7 @@ main .about p {
 }
 main .three-image-grid {
   text-align: center;
+  max-width: 2000px;
 }
 main .three-image-grid .image-row {
   width: 32%;
