@@ -30,6 +30,9 @@ summary {
 ul li {
   list-style-type: none;
 }
+a:link {
+  text-decoration: none;
+}
 .site-container {
   text-align: center;
   overflow-x: hidden;
@@ -105,28 +108,37 @@ details[open] summary::-webkit-details-marker {
   margin-right: 20px;
   margin-bottom: -5px;
 }
-.header-bottom {
+header a:link {
+  color: #444444;
+}
+header a:active {
+  color: #444444;
+}
+header a:visited {
+  color: #444444;
+}
+header .header-bottom {
   display: flex;
   align-items: center;
 }
-.header-bottom img {
+header .header-bottom img {
   width: 50px;
   height: 50px;
   padding: 10px;
 }
-.header-bottom .ch-holdings {
+header .header-bottom .ch-holdings {
   display: flex;
   align-items: center;
   text-transform: none;
   font-size: 0.7rem;
   width: 35%;
 }
-.header-bottom .header-bottom-right {
+header .header-bottom .header-bottom-right {
   display: flex;
   width: 65%;
   font-size: 0.8rem;
 }
-.header-bottom .header-bottom-right .contact-info {
+header .header-bottom .header-bottom-right .contact-info {
   z-index: 1;
   text-align: center;
   background-color: #f2f2f2;
@@ -140,15 +152,15 @@ details[open] summary::-webkit-details-marker {
   text-transform: none;
   letter-spacing: 0.05em;
 }
-.header-bottom .header-bottom-right .contact-info .bold {
+header .header-bottom .header-bottom-right .contact-info .bold {
   font-weight: 700;
 }
-.header-bottom .header-bottom-right nav {
+header .header-bottom .header-bottom-right nav {
   display: flex;
   width: 45%;
   justify-content: flex-end;
 }
-.header-bottom .header-bottom-right nav button {
+header .header-bottom .header-bottom-right nav button {
   padding: 25px 10% 20px 10%;
   font-size: 1.2rem;
   font-weight: 700;
@@ -157,19 +169,28 @@ details[open] summary::-webkit-details-marker {
   border-radius: 0 0 0px 10px;
 }
 @media (min-width: 1420px) {
-  .header-bottom .header-bottom-right nav button {
+  header .header-bottom .header-bottom-right nav button {
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
   }
 }
-.header-bottom .header-bottom-right nav .nav-button1 {
+header .header-bottom .header-bottom-right nav .nav-button1 {
   color: #444444;
 }
-.header-bottom .header-bottom-right nav .nav-button1 p {
+header .header-bottom .header-bottom-right nav .nav-button1 p {
   border-bottom: 2px solid #008a7b;
 }
-.header-bottom .header-bottom-right nav .nav-button2 {
+header .header-bottom .header-bottom-right nav .nav-button2 {
   background-color: #008a7b;
+  color: #f2f2f2;
+}
+header .header-bottom .header-bottom-right nav .nav-button2 a:link {
+  color: #f2f2f2;
+}
+header .header-bottom .header-bottom-right nav .nav-button2 a:active {
+  color: #f2f2f2;
+}
+header .header-bottom .header-bottom-right nav .nav-button2 a:visited {
   color: #f2f2f2;
 }
 main h1 {
@@ -203,9 +224,17 @@ main .middle-social {
 main .middle-social img {
   max-width: 30px;
   height: 30px;
+}
+main .middle-social a {
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 0 1%;
+}
+main .middle-social .grow1 {
+  transition: all 0.4s ease-in-out;
+}
+main .middle-social .grow1:hover {
+  transform: scale(1.1);
 }
 main .grid-all {
   display: none;
@@ -343,27 +372,51 @@ footer .footer-top {
   margin: auto;
   width: 35%;
 }
-footer .footer-top .red-text {
+footer .red-text {
   color: #e95f78;
 }
-footer .footer-top p {
+footer .red-text a:link {
+  color: #e95f78;
+}
+footer .red-text a:active {
+  color: #e95f78;
+}
+footer .red-text a:visited {
+  color: #e95f78;
+}
+footer p {
   padding: 10px;
   font-weight: 600;
 }
-footer .footer-bottom {
+.footer-bottom {
   padding-bottom: 20px;
 }
-footer .footer-menu ul li {
+.footer-menu ul li {
   padding: 2px 10px;
 }
-footer .footer-social {
+.footer-menu ul li a:link {
+  color: #444444;
+}
+.footer-menu ul li a:active {
+  color: #444444;
+}
+.footer-menu ul li a:visited {
+  color: #444444;
+}
+.footer-social {
   margin-right: 20%;
 }
-footer .footer-social img {
+.footer-social img {
   max-width: 30px;
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 0 1%;
+}
+.footer-social .grow1 {
+  transition: all 0.4s ease-in-out;
+}
+.footer-social .grow1:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
