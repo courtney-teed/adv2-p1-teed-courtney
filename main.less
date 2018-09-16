@@ -26,7 +26,51 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	margin-right: 20%;
 }
 
+.bgimage {
+	background-image: url('img/bw-background-original.png');
+	background-position: center center;
+	background-size: cover;
+	height: 120px;
+	text-align: right;
+	padding-top: 10px;
+}
+
+.bg-image-tab {
+	background-image: url('img/about-tab.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 130px;
+	width: 140px;
+	padding-top: 20px;
+}
+
+.gray-link {
+	a:link {
+		color: @gray;
+	}
+	a:active {
+		color: @gray;
+	}
+	a:visited {
+		color: @gray;
+	}
+}
+
+.red-link {
+	a:link {
+		color: @red;
+	}
+	a:active {
+		color: @red;
+	}
+	a:visited {
+		color: @red;
+	}
+}
+
 /* END MIXINS */
+
+
 
 
 ul li {
@@ -80,24 +124,6 @@ details[open] summary::-webkit-details-marker {
 	transform: rotate(180deg);
 }
 
-.bgimage {
-	background-image: url('img/bw-background-original.png');
-	background-position: center center;
-	background-size: cover;
-	height: 120px;
-	text-align: right;
-	padding-top: 10px;
-}
-
-.bg-image-tab {
-	background-image: url('img/about-tab.jpg');
-	background-position: center center;
-	background-size: cover;
-	height: 130px;
-	width: 140px;
-	padding-top: 20px;
-}
-
 .header-top ul, .footer-bottom ul {
 	.black-menu()
 }
@@ -114,15 +140,7 @@ details[open] summary::-webkit-details-marker {
 }
 
 header {
-	a:link {
-		color: @gray;
-	}
-	a:active {
-		color: @gray;
-	}
-	a:visited {
-		color: @gray;
-	}
+	.gray-link()
 	.header-bottom {
 		display: flex;
 		align-items: center;
@@ -382,15 +400,7 @@ footer {
 		width: 35%;
 		.red-text {
 			color: @red;
-			a:link {
-				color: @red;
-			}
-			a:active {
-				color: @red;
-			}
-			a:visited {
-				color: @red;
-			}
+			.red-link()
 		}
 		p {
 			padding: 10px;
@@ -403,15 +413,7 @@ footer {
 	.footer-menu {
 		ul li {
 			padding: 2px 10px;
-			a:link {
-				color: @gray;
-			}
-			a:active {
-				color: @gray;
-			}
-			a:visited {
-				color: @gray;
-			}
+			.gray-link()
 		}
 	}
 	.footer-social {
