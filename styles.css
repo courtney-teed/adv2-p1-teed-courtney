@@ -237,6 +237,9 @@ main .middle-social .grow1:hover {
 main .grid-all {
   display: none;
 }
+main .grid h2 {
+  display: none;
+}
 @media (min-width: 800px) {
   main .grid-all {
     display: block;
@@ -289,6 +292,9 @@ main .three-image-grid {
 main .three-image-grid .image-row {
   width: 32%;
   padding: 40px 4px 80px 4px;
+}
+main .three-image-grid h2 {
+  display: none;
 }
 main .cocktails img {
   margin-top: 70px;
@@ -362,7 +368,7 @@ main .hidden ul {
 main .hidden h4 {
   font-size: 1.4rem;
   color: #008a7b;
-  padding: 10px 0 20px 0;
+  padding: 40px 0 20px 50px;
 }
 footer .footer-top {
   display: flex;
