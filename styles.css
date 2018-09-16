@@ -53,7 +53,10 @@ details {
 }
 body h2,
 summary h2,
-details h2 {
+details h2,
+body h4,
+summary h4,
+details h4 {
   text-transform: uppercase;
 }
 header details {
@@ -357,6 +360,11 @@ main .hidden {
 main .hidden div {
   width: 900px;
   margin-left: 70px;
+}
+main .hidden h4 {
+  font-size: 1.4rem;
+  color: #008a7b;
+  padding: 30px 0 20px 0;
 }
 footer .footer-top {
   display: flex;
