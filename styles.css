@@ -41,7 +41,6 @@ a:link {
   text-align: right;
 }
 header,
-button,
 footer {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
@@ -349,6 +348,10 @@ main .hidden h2,
 main .cocktails h3,
 main .hidden h3 {
   color: #444444;
+}
+main .cocktails h3,
+main .hidden h3 {
+  font-weight: 600;
 }
 main .cocktails ul,
 main .hidden ul {
