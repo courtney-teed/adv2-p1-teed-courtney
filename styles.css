@@ -297,6 +297,7 @@ main .three-image-grid h2 {
 }
 main .cocktails img {
   margin-top: 70px;
+  display: none;
 }
 main .cocktails h2 {
   padding-bottom: 40px;

@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 
 
-/* MIXINS */
+/* --------- MIXINS ------------ */
 
 .black-menu {
 	color: @gray;
@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	}
 }
 
-/* END MIXINS */
+/* ------------ END MIXINS -------------- */
 
 
 
@@ -82,7 +82,6 @@ a:link {
 }
 
 .site-container {
-	text-align: center;
 	overflow-x: hidden;
 	header summary {
 		text-align: right;
@@ -156,6 +155,7 @@ header {
 			font-size: 0.7rem;
 			width: 35%;
 		}
+	}
 		.header-bottom-right {
 			display: flex;
 			width: 65%;
@@ -222,14 +222,7 @@ main {
 			margin-top: 183px;
 		}
 	}
-		.false-idol-logo {
-		max-width: 280px;
-		@media (min-width: 1024px) {
-			float: left;
-			max-width: 350px;
-			margin-top: -183px;
-		}
-	}
+}
 	section img {
 		width: 90%;
 	}
@@ -316,7 +309,7 @@ main {
 	}
 	.cocktails {
 		img {
-			margin-top: 70px;
+			display: none;
 		}
 		h2 {
 			padding-bottom: 40px;
